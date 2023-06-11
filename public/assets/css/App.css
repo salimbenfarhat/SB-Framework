@@ -1,0 +1,249 @@
+/* 
+    Author: Salim Benfarhat
+    Website: salim.link
+    Email: hello@salim.link
+    Description: Ce fichier contient les styles CSS du Framework SB-Framework.
+    Version: 1.0
+*/
+
+/* VARIABLES START */
+:root {
+  --main-color: #818081;
+  --secondary-color: #FEBD58;
+  --third-color: #000101;
+  --fourth-color: #C88D34;
+  --fifth-color: #FFF;
+}
+/* VARIABLES END */
+
+/* GENERAL START */
+body {
+	background-color: lightgoldenrodyellow;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--main-color);
+  color: var(--fifth-color);
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 20px;
+  color: var(--fifth-color);
+  background-color: var(--fourth-color);
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1, .h1 {
+  font-size: 2rem; 
+}
+
+h2, .h2 {
+  font-size: 1.8rem; 
+}
+
+h3, .h3 {
+  font-size: 1.6rem; 
+}
+
+h4, .h4 {
+  font-size: 1.4rem; 
+}
+
+h5, .h5 {
+  font-size: 1.2rem; 
+}
+
+h6, .h6 {
+  font-size: 1rem; 
+}
+
+.responsive-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+section {
+  padding: 20px;
+}
+/* GENRAL END */
+
+/* MARGIN - PADDING START */
+.m-5 {
+  margin: 5%;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+.mr-5 {
+  margin-right: 5%;
+}
+
+.mb-5 {
+  margin-bottom: 5%;
+}
+
+.ml-5 {
+  margin-left: 5%;
+}
+
+.p-5 {
+  padding: 5%;
+}
+
+.pt-5 {
+  padding-top: 5%;
+}
+
+.pr-5 {
+  padding-right: 5%;
+}
+
+.pb-5 {
+  padding-bottom: 5%;
+}
+
+.pl-5 {
+  padding-left: 5%;
+}
+
+.padding-left {
+  padding-left: 5%;
+}
+
+.padding-right {
+  padding-right: 5%;
+}
+/* MARGIN - PADDING END */
+
+/* NAV START */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+}
+
+nav a {
+  color: var(--fifth-color);
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: var(--fifth-color);
+  color: var(--secondary-color);
+}
+/* NAV END */
+
+/* BIOGRAPHIE START */
+.biography {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.biography h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.biography p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* BIOGRAPHIE END */
+
+/* FORM START */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.form-group.checkbox-group {
+  flex-direction: row;
+}
+
+input[type="submit"], .btn-form {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, .btn-form:hover {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}
+/* FORM END */
